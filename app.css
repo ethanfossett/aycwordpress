@@ -1,0 +1,21 @@
+:root{font:16px system-ui;color:#19322e;background:#eef3f1;--brand:#15594d;--border:#c8d9d3}
+*{box-sizing:border-box}
+body{margin:0}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;background:#133c34;padding:1rem max(1.25rem,calc((100vw - 75rem)/2));color:white}
+header a{color:white;text-decoration:none}header nav{display:flex;flex-wrap:wrap;gap:1.2rem}
+.brand{font-weight:800;margin-right:1.2rem}a{color:#12594d;text-underline-offset:.18em}
+main{max-width:77rem;margin:auto;padding:1.5rem 1.25rem 4rem}
+h1{font-size:clamp(1.8rem,4vw,2.65rem);letter-spacing:-.04em;margin:.5rem 0 1.3rem}
+h2{font-size:1.25rem}h3{font-size:1rem}
+form,article,.panel{border:1px solid var(--border);background:white;border-radius:.7rem;padding:1rem;margin:1rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1rem}
+.grid > .panel{margin:0}
+.week{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:.65rem}
+.week article{margin:0}
+label{display:block;margin:.65rem 0}
+input,select,textarea,button{font:inherit;padding:.48rem;border:1px solid #9bb7ac;border-radius:.35rem;max-width:100%}
+textarea{display:block;width:min(100%,35rem);min-height:4.5rem}
+button{background:var(--brand);color:white;border-color:var(--brand);cursor:pointer;font-weight:650}
+li{margin:.55rem 0}.tag{display:inline-block;background:#e3f0eb;padding:.16rem .48rem;border-radius:.35rem;font-size:.84rem}
+.muted{color:#4a635e}.notes{white-space:pre-wrap;overflow-wrap:anywhere}
+:focus-visible{outline:3px solid #b36819;outline-offset:3px}

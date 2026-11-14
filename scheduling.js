@@ -24,3 +24,9 @@ export function bookingSlot(fields) {
   }
   return { date, start, end: start + duration };
 }
+
+export function shiftDay(day, offset) {
+  const date = new Date(scheduleDate(day) + 'T00:00:00Z');
+  date.setUTCDate(date.getUTCDate() + offset);
+  return date.toISOString().slice(0, 10);
+}
